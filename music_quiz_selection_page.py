@@ -1,19 +1,26 @@
 from tkinter import *
 
-root = Tk()
+homepage = Tk()
+homepage.geometry("800x500+400+170")
+homepage.title("Musayzing")
+homepage.configure(background='black')
 
-root.minsize(height=500, width=900)
-root.title("Musayzing")
-root.configure(background='white')
+def log_in_page():
+    homepage.destroy()
 
-label = Label(root, text="MUSAYZING", font=('Times_New_Romans', 25)) 
-label.place()
-button1 = Button(root , text="Connect with Facebook", font=('Times_New_Romans', 15))
-button1.place(x=450, y=250, anchor=CENTER)
-button2 = Button(root, text="Connect with Ormiston", font=('Times_New_Roman', 15))
-button2.pack(anchor= CENTER)
+    loginpage = Tk()
+    loginpage.geometry("800x500+400+170")
+    loginpage.title("Log In")
+    loginpage.configure(background='light grey')
+
+label = Label(homepage, text="MUSAYZING", font=('Times_New_Romans', 50)) 
+label.place(x=200, y=50)
+button1 = Button(homepage , text="Connect with Facebook",command=log_in_page, font=('Times_New_Romans', 15), height=1, width=20)
+button1.place(x=290, y=230)
+button2 = Button(homepage, text="Connect with Ormiston",command=log_in_page, font=('Times_New_Roman', 15), height=1, width=20)
+button2.place(x=290, y=320)
 
 
 
 
-root.mainloop()
+homepage.mainloop()
