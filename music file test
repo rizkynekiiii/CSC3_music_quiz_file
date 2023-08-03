@@ -24,8 +24,18 @@ def log_in_page():
         gamespage.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
         gamespage.title("Games") # Title each page has different one
         gamespage.configure(background='black') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+        label=Label(gamespage, text="Games", font=('Times_New_Romans', 50))
+        label.place(x=280, y=50)
+        button4 = Button(gamespage, text="Missing Lyrics",command=missing_lyrics, font=('Times_New_Romans', 20))
+        button4.place(x=250, y=200, height=40, width=300)
+        button5 = Button(gamespage, text="Song Artist", command=song_artist, font=('Times_New_Romans', 20))
+        button5.place(x=250, y=280, height=40, width=300)
+        button6 = Button(gamespage, text="Artist Age", command=artist_age, font=('Times_New_Romans', 20))
+        button6.place(x=250, y=360, height=40, width=300)
+        gamespage.mainloop()
         
         def missing_lyrics():
+            gamespage.destroy()
 
             missinglyrics = Tk()
             missinglyrics.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
@@ -34,19 +44,14 @@ def log_in_page():
 
             label=Label(missinglyrics, text="Missing Lyrics", font=('Times_New_Romans', 50))
             label.place(x=200, y=50)
-            button8 = Button(master=missinglyrics, text="Play",command=play_missing, font=('Times_New_Romans', 40))
-            button8.place(x=310, y=280,  height=100, width=200)
+            button7 = Button(missinglyrics, text="Play", font=('Times_New_Romans', 40))
+            button7.place(x=310, y=280,  height=100, width=200)
+            button11 = Button(missinglyrics, text="back", font=('Times_New_Romans', 20))
+            button11.place(x=80, y=150)
             missinglyrics.mainloop()
 
-        def play_missing():
-
-            question1_missing = Tk()
-            question1_missing.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-            question1_missing.title("Question1") # Title each page has different one
-            question1_missing.configure(background='white') # black pages includes the #homepage/ #gamesectionpage/ #playpage
-            question1_missing.mainloop()
-
         def song_artist():
+            gamespage.destroy()
 
             songartist = Tk()
             songartist.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
@@ -60,6 +65,7 @@ def log_in_page():
             songartist.mainloop()
 
         def artist_age():
+            gamespage.destroy()
 
             artistage = Tk()
             artistage.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
@@ -71,18 +77,7 @@ def log_in_page():
             button9 = Button(artistage, text="Play", font=('Times_New_Romans', 40))
             button9.place(x=310, y=280,  height=100, width=200)
             artistage.mainloop()
-
-
-        label=Label(gamespage, text="Games", font=('Times_New_Romans', 50))
-        label.place(x=280, y=50)
-        button4 = Button(gamespage, text="Missing Lyrics",command=missing_lyrics, font=('Times_New_Romans', 20))
-        button4.place(x=250, y=200, height=40, width=300)
-        button5 = Button(gamespage, text="Song Artist", command=song_artist, font=('Times_New_Romans', 20))
-        button5.place(x=250, y=280, height=40, width=300)
-        button6 = Button(gamespage, text="Artist Age", command=artist_age, font=('Times_New_Romans', 20))
-        button6.place(x=250, y=360, height=40, width=300)
-        gamespage.mainloop()
-
+        
 
 
     entry_username = Entry(loginpage)
