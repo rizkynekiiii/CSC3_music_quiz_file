@@ -2,6 +2,7 @@ from tkinter import *
 
 artistage = None
 games_page = None
+question1 = None
 
 homepage = Tk()
 homepage.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
@@ -27,24 +28,56 @@ def log_in_page():
         
         def missing_lyrics():
 
-            missinglyrics = Tk()
-            missinglyrics.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-            missinglyrics.title("Play") # Title each page has different one
-            missinglyrics.configure(background='black') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+            missing = Tk()
+            missing.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
+            missing.title("Play") # Title each page has different one
+            missing.configure(background='black') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
-            label=Label(missinglyrics, text="Missing Lyrics", font=('Times_New_Romans', 50))
+            label=Label(missing, text="Missing Lyrics", font=('Times_New_Romans', 50))
             label.place(x=200, y=50)
-            button8 = Button(master=missinglyrics, text="Play",command=play_missing, font=('Times_New_Romans', 40))
+            button8 = Button(master=missing, text="Play",command=play_missing1, font=('Times_New_Romans', 40))
             button8.place(x=310, y=280,  height=100, width=200)
-            missinglyrics.mainloop()
+            missing.mainloop()
 
-        def play_missing():
-
-            question1_missing = Tk()
-            question1_missing.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-            question1_missing.title("Question1") # Title each page has different one
-            question1_missing.configure(background='white') # black pages includes the #homepage/ #gamesectionpage/ #playpage
-            question1_missing.mainloop()
+        def play_missing1():
+            gamespage.destroy()
+            
+            question1 = Tk()
+            question1.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
+            question1.title("Question1") # Title each page has different one
+            question1.configure(background='white') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+            label=Label(question1, text="Question 1/5", font=('Times_New_Romans', 50))
+            label.place(x=230, y=40)
+            label=Label(question1, text="You needed somebody, baby, put it on me, I can be that ____, said I can be that body", font=('Times_New_Romans', 14))
+            label.place(x=40, y=150)
+            button1=Button(question1, text="lady",command=play_missing2, font=('Times_New_Romans', 30))
+            button1.place(x=150, y=230, width=200, height=70)
+            button2=Button(question1,text="bludy" ,command=play_missing2,font=('Times_New_Romans', 30))
+            button2.place(x=460, y=230, width=200, height=70)
+            button3=Button(question1,text="body" ,command=play_missing2,font=('Times_New_Romans', 30))
+            button3.place(x=150, y=350, width=200, height=70)
+            button4=Button(question1,text="gay" ,command=play_missing2,font=('Times_New_Romans', 30))
+            button4.place(x=460, y=350, width=200, height=70)
+            question1.mainloop()
+        def play_missing2():
+            
+            question2 = Tk()
+            question2.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
+            question2.title("Question2") # Title each page has different one
+            question2.configure(background='white') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+            label=Label(question2, text="Question 2/5", font=('Times_New_Romans', 50))
+            label.place(x=230, y=40)
+            label=Label(question2, text="His love never felt _____, switch sides and I'm beside you ", font=('Times_New_Romans', 14))
+            label.place(x=160, y=150)
+            button1=Button(question2, text="right",command=play_missing2, font=('Times_New_Romans', 30))
+            button1.place(x=150, y=230, width=200, height=70)
+            button2=Button(question2,text="good" ,command=play_missing2,font=('Times_New_Romans', 30))
+            button2.place(x=460, y=230, width=200, height=70)
+            button3=Button(question2,text="ass" ,command=play_missing2,font=('Times_New_Romans', 30))
+            button3.place(x=150, y=350, width=200, height=70)
+            button4=Button(question2,text="decent" ,command=play_missing2,font=('Times_New_Romans', 30))
+            button4.place(x=460, y=350, width=200, height=70)
+            question2.mainloop()
 
         def song_artist():
 
@@ -55,9 +88,17 @@ def log_in_page():
 
             label=Label(songartist, text="Song Artist", font=('Times_New_Romans', 50))
             label.place(x=240, y=50)
-            button8 = Button(songartist, text="Play", font=('Times_New_Romans', 40))
+            button8 = Button(songartist, text="Play",command=play_artist, font=('Times_New_Romans', 40))
             button8.place(x=310, y=280,  height=100, width=200)
             songartist.mainloop()
+
+        def play_artist():
+
+            question1_artist = Tk()
+            question1_artist.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
+            question1_artist.title("Question1") # Title each page has different one
+            question1_artist.configure(background='white') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+            question1_artist.mainloop()
 
         def artist_age():
 
@@ -68,9 +109,18 @@ def log_in_page():
 
             label=Label(artistage, text="Artist Age", font=('Times_New_Romans', 50))
             label.place(x=260, y=50)
-            button9 = Button(artistage, text="Play", font=('Times_New_Romans', 40))
+            button9 = Button(artistage, text="Play",command=play_age, font=('Times_New_Romans', 40))
             button9.place(x=310, y=280,  height=100, width=200)
             artistage.mainloop()
+
+        def play_age():
+
+            question1_age = Tk()
+            question1_age.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
+            question1_age.title("Question1") # Title each page has different one
+            question1_age.configure(background='white') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+            question1_age.mainloop()
+
 
 
         label=Label(gamespage, text="Games", font=('Times_New_Romans', 50))
