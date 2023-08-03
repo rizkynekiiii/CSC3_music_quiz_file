@@ -27,6 +27,7 @@ def log_in_page():
         gamespage.configure(background='black') # black pages includes the #homepage/ #gamesectionpage/ #playpage
         
         def missing_lyrics():
+            gamespage.destroy()
 
             missing = Tk()
             missing.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
@@ -40,12 +41,11 @@ def log_in_page():
             missing.mainloop()
 
         def play_missing1():
-            gamespage.destroy()
-            
             question1 = Tk()
             question1.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
             question1.title("Question1") # Title each page has different one
             question1.configure(background='white') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+
             label=Label(question1, text="Question 1/5", font=('Times_New_Romans', 50))
             label.place(x=230, y=40)
             label=Label(question1, text="You needed somebody, baby, put it on me, I can be that ____, said I can be that body", font=('Times_New_Romans', 14))
@@ -60,7 +60,7 @@ def log_in_page():
             button4.place(x=460, y=350, width=200, height=70)
             question1.mainloop()
         def play_missing2():
-            
+
             question2 = Tk()
             question2.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
             question2.title("Question2") # Title each page has different one
@@ -80,7 +80,7 @@ def log_in_page():
             question2.mainloop()
 
         def song_artist():
-
+            gamespage.destroy()
             songartist = Tk()
             songartist.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
             songartist.title("Play") # Title each page has different one
@@ -101,7 +101,7 @@ def log_in_page():
             question1_artist.mainloop()
 
         def artist_age():
-
+            gamespage.destroy()
             artistage = Tk()
             artistage.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
             artistage.title("Play") # Title each page has different one
