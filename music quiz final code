@@ -37,35 +37,35 @@ def log_in_page():
                 gamespage.destroy()
                 question1 = Tk()
                 question1.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                question1.title("Question1") # Title each page has different one
+                question1.title("Missing Lyrics Question1") # Title each page has different one
                 question1.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                 def play_missing2():
                     question1.destroy()
                     question2 = Tk()
                     question2.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                    question2.title("Question2") # Title each page has different one
+                    question2.title("Missing Lyrics Question2") # Title each page has different one
                     question2.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
                     
                     def play_missing3():
                         question2.destroy()
                         question3 = Tk()
                         question3.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                        question3.title("Question3") # Title each page has different one
+                        question3.title("Missing Lyrics Question3") # Title each page has different one
                         question3.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                         def play_missing4():
                             question3.destroy()
                             question4 = Tk()
                             question4.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                            question4.title("Question4") # Title each page has different one
+                            question4.title("Missing Lyrics Question4") # Title each page has different one
                             question4.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                             def play_missing5():
                                 question4.destroy()
                                 question5 = Tk()
                                 question5.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                                question5.title("Question5") # Title each page has different one
+                                question5.title("Missing Lyrics Question5") # Title each page has different one
                                 question5.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                                 def overall_result():
@@ -84,7 +84,7 @@ def log_in_page():
                                 button1=Button(question5, text="hoes",command=overall_result, font=('Times_New_Romans', 30))
                                 button1.place(x=150, y=230, width=200, height=70)
                                 button2=Button(question5,text="truth" ,command=overall_result,font=('Times_New_Romans', 30))
-                                button2.place(x=460, y=230, width=200, height=70)
+                                button2.place(x=460, y=230, width=200, height=70) #correct answer
                                 button3=Button(question5,text="troes" ,command=overall_result,font=('Times_New_Romans', 30))
                                 button3.place(x=150, y=350, width=200, height=70)
                                 button4=Button(question5,text="ghost" ,command=overall_result,font=('Times_New_Romans', 30))
@@ -102,7 +102,7 @@ def log_in_page():
                             button3=Button(question4,text="dizzy" ,command=play_missing5,font=('Times_New_Romans', 30))
                             button3.place(x=150, y=350, width=200, height=70)
                             button4=Button(question4,text="damned" ,command=play_missing5,font=('Times_New_Romans', 30))
-                            button4.place(x=460, y=350, width=200, height=70)
+                            button4.place(x=460, y=350, width=200, height=70) # correct answer
                             question4.mainloop()
 
                         label=Label(question3, text="Question 3/5", font=('Times_New_Romans', 50))
@@ -116,7 +116,7 @@ def log_in_page():
                         button3=Button(question3,text="car" ,command=play_missing4,font=('Times_New_Romans', 30))
                         button3.place(x=150, y=350, width=200, height=70)
                         button4=Button(question3,text="benz" ,command=play_missing4,font=('Times_New_Romans', 30))
-                        button4.place(x=460, y=350, width=200, height=70)
+                        button4.place(x=460, y=350, width=200, height=70) # correct answer
                         question3.mainloop()
 
                     label=Label(question2, text="Question 2/5", font=('Times_New_Romans', 50))
@@ -124,7 +124,7 @@ def log_in_page():
                     label=Label(question2, text="His love never felt _____, switch sides and I'm beside you ", font=('Times_New_Romans', 14))
                     label.place(x=160, y=150)
                     button1=Button(question2, text="right",command=play_missing3, font=('Times_New_Romans', 30))
-                    button1.place(x=150, y=230, width=200, height=70)
+                    button1.place(x=150, y=230, width=200, height=70) # correct answer
                     button2=Button(question2,text="good" ,command=play_missing3,font=('Times_New_Romans', 30))
                     button2.place(x=460, y=230, width=200, height=70)
                     button3=Button(question2,text="ass" ,command=play_missing3,font=('Times_New_Romans', 30))
@@ -138,7 +138,7 @@ def log_in_page():
                 label=Label(question1, text="I can't believe that it's ______ Friday, Yeah it's ______ Friday", font=('Times_New_Romans', 14))
                 label.place(x=40, y=150)
                 button1=Button(question1, text="freaky",command=play_missing2, font=('Times_New_Romans', 30))
-                button1.place(x=150, y=230, width=200, height=70)
+                button1.place(x=150, y=230, width=200, height=70) # correct answer
                 button2=Button(question1,text="moody" ,command=play_missing2,font=('Times_New_Romans', 30))
                 button2.place(x=460, y=230, width=200, height=70)
                 button3=Button(question1,text="frizzy" ,command=play_missing2,font=('Times_New_Romans', 30))
@@ -170,35 +170,35 @@ def log_in_page():
                 gamespage.destroy()
                 question1 = Tk()
                 question1.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                question1.title("Question1") # Title each page has different one
+                question1.title("Song Artist Question1") # Title each page has different one
                 question1.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                 def play_artist2():
                     question1.destroy()
                     question2 = Tk()
                     question2.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                    question2.title("Question2") # Title each page has different one
+                    question2.title("Song Artist Question2") # Title each page has different one
                     question2.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
                     
                     def play_artist3():
                         question2.destroy()
                         question3 = Tk()
                         question3.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                        question3.title("Question3") # Title each page has different one
+                        question3.title("Song Artist Question3") # Title each page has different one
                         question3.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                         def play_artist4():
                             question3.destroy()
                             question4 = Tk()
                             question4.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                            question4.title("Question4") # Title each page has different one
+                            question4.title("Song Artist Question4") # Title each page has different one
                             question4.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                             def play_artist5():
                                 question4.destroy()
                                 question5 = Tk()
                                 question5.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                                question5.title("Question5") # Title each page has different one
+                                question5.title("Song Artist Question5") # Title each page has different one
                                 question5.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                                 def overall_result():
@@ -219,7 +219,7 @@ def log_in_page():
                                 button2=Button(question5,text="EXO" ,command=overall_result,font=('Times_New_Romans', 30))
                                 button2.place(x=460, y=230, width=200, height=70)
                                 button3=Button(question5,text="BTS" ,command=overall_result,font=('Times_New_Romans', 30))
-                                button3.place(x=150, y=350, width=200, height=70)
+                                button3.place(x=150, y=350, width=200, height=70) # correct answer
                                 button4=Button(question5,text="Seventeen" ,command=overall_result,font=('Times_New_Romans', 30))
                                 button4.place(x=460, y=350, width=200, height=70)
                                 question5.mainloop()
@@ -235,7 +235,7 @@ def log_in_page():
                             button3=Button(question4,text="NewJ" ,command=play_artist5,font=('Times_New_Romans', 30))
                             button3.place(x=150, y=350, width=200, height=70)
                             button4=Button(question4,text="Shoti" ,command=play_artist5,font=('Times_New_Romans', 30))
-                            button4.place(x=460, y=350, width=200, height=70)
+                            button4.place(x=460, y=350, width=200, height=70) # correct answer
                             question4.mainloop()
 
                         label=Label(question3, text="Question 3/5", font=('Times_New_Romans', 50))
@@ -245,7 +245,7 @@ def log_in_page():
                         button1=Button(question3, text="ChrisB",command=play_artist4, font=('Times_New_Romans', 30))
                         button1.place(x=150, y=230, width=200, height=70)
                         button2=Button(question3,text="Abel" ,command=play_artist4,font=('Times_New_Romans', 30))
-                        button2.place(x=460, y=230, width=200, height=70)
+                        button2.place(x=460, y=230, width=200, height=70) # correct answer
                         button3=Button(question3,text="Kid Laroi" ,command=play_artist4,font=('Times_New_Romans', 30))
                         button3.place(x=150, y=350, width=200, height=70)
                         button4=Button(question3,text="Giveon" ,command=play_artist4,font=('Times_New_Romans', 30))
@@ -263,7 +263,7 @@ def log_in_page():
                     button3=Button(question2,text="Bellie" ,command=play_artist3,font=('Times_New_Romans', 30))
                     button3.place(x=150, y=350, width=200, height=70)
                     button4=Button(question2,text="ASTN" ,command=play_artist3,font=('Times_New_Romans', 30))
-                    button4.place(x=460, y=350, width=200, height=70)
+                    button4.place(x=460, y=350, width=200, height=70) # correct answer
                     question2.mainloop()
 
                 label=Label(question1, text="Question 1/5", font=('Times_New_Romans', 50))
@@ -271,7 +271,7 @@ def log_in_page():
                 label=Label(question1, text="Which artist sang the song beside you in 2021?", font=('Times_New_Romans', 14))
                 label.place(x=40, y=150)
                 button1=Button(question1, text="Keshi",command=play_artist2, font=('Times_New_Romans', 30))
-                button1.place(x=150, y=230, width=200, height=70)
+                button1.place(x=150, y=230, width=200, height=70) # correct answer
                 button2=Button(question1,text="Dmxthia" ,command=play_artist2,font=('Times_New_Romans', 30))
                 button2.place(x=460, y=230, width=200, height=70)
                 button3=Button(question1,text="SZA" ,command=play_artist2,font=('Times_New_Romans', 30))
@@ -303,35 +303,35 @@ def log_in_page():
                 gamespage.destroy()
                 question1 = Tk()
                 question1.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                question1.title("Question1") # Title each page has different one
+                question1.title("Artist Age Question1") # Title each page has different one
                 question1.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                 def play_age2():
                     question1.destroy()
                     question2 = Tk()
                     question2.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                    question2.title("Question2") # Title each page has different one
+                    question2.title("Artist Age Question2") # Title each page has different one
                     question2.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
                     
                     def play_age3():
                         question2.destroy()
                         question3 = Tk()
                         question3.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                        question3.title("Question3") # Title each page has different one
+                        question3.title("Artist Age Question3") # Title each page has different one
                         question3.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                         def play_age4():
                             question3.destroy()
                             question4 = Tk()
                             question4.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                            question4.title("Question4") # Title each page has different one
+                            question4.title("Artist Age Question4") # Title each page has different one
                             question4.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                             def play_age5():
                                 question4.destroy()
                                 question5 = Tk()
                                 question5.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
-                                question5.title("Question5") # Title each page has different one
+                                question5.title("Artist Age Question5") # Title each page has different one
                                 question5.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
 
                                 def overall_result():
@@ -344,10 +344,10 @@ def log_in_page():
 
                                 label=Label(question5, text="Question 5/5", font=('Times_New_Romans', 50))
                                 label.place(x=230, y=40)
-                                label=Label(question5, text="Which one of the following is the current age of ?", font=('Times_New_Romans', 14))
+                                label=Label(question5, text="Which one of the following is the current age of Taylor Swift?", font=('Times_New_Romans', 14))
                                 label.place(x=160, y=150)
                                 button1=Button(question5, text="33",command=overall_result, font=('Times_New_Romans', 30))
-                                button1.place(x=150, y=230, width=200, height=70)
+                                button1.place(x=150, y=230, width=200, height=70) # correct answer
                                 button2=Button(question5,text="30" ,command=overall_result,font=('Times_New_Romans', 30))
                                 button2.place(x=460, y=230, width=200, height=70)
                                 button3=Button(question5,text="29" ,command=overall_result,font=('Times_New_Romans', 30))
@@ -367,7 +367,7 @@ def log_in_page():
                             button3=Button(question4,text="32" ,command=play_age5,font=('Times_New_Romans', 30))
                             button3.place(x=150, y=350, width=200, height=70)
                             button4=Button(question4,text="36" ,command=play_age5,font=('Times_New_Romans', 30))
-                            button4.place(x=460, y=350, width=200, height=70)
+                            button4.place(x=460, y=350, width=200, height=70) # correct answer
                             question4.mainloop()
 
                         label=Label(question3, text="Question 3/5", font=('Times_New_Romans', 50))
@@ -375,7 +375,7 @@ def log_in_page():
                         label=Label(question3, text="Which one of the following is the current age of Keshi?", font=('Times_New_Romans', 14))
                         label.place(x=160, y=150)
                         button1=Button(question3, text="28",command=play_age4, font=('Times_New_Romans', 30))
-                        button1.place(x=150, y=230, width=200, height=70)
+                        button1.place(x=150, y=230, width=200, height=70) # correct answer
                         button2=Button(question3,text="26" ,command=play_age4,font=('Times_New_Romans', 30))
                         button2.place(x=460, y=230, width=200, height=70)
                         button3=Button(question3,text="25" ,command=play_age4,font=('Times_New_Romans', 30))
@@ -389,7 +389,7 @@ def log_in_page():
                     label=Label(question2, text="Which one of the following is the current age of Bellie Ielish? ", font=('Times_New_Romans', 14))
                     label.place(x=160, y=150)
                     button1=Button(question2, text="21",command=play_age3, font=('Times_New_Romans', 30))
-                    button1.place(x=150, y=230, width=200, height=70)
+                    button1.place(x=150, y=230, width=200, height=70) # correct answer
                     button2=Button(question2,text="20" ,command=play_age3,font=('Times_New_Romans', 30))
                     button2.place(x=460, y=230, width=200, height=70)
                     button3=Button(question2,text="24" ,command=play_age3,font=('Times_New_Romans', 30))
@@ -405,7 +405,7 @@ def log_in_page():
                 button1=Button(question1, text="27",command=play_age2, font=('Times_New_Romans', 30))
                 button1.place(x=150, y=230, width=200, height=70)
                 button2=Button(question1,text="29" ,command=play_age2,font=('Times_New_Romans', 30))
-                button2.place(x=460, y=230, width=200, height=70)
+                button2.place(x=460, y=230, width=200, height=70) # correct answer
                 button3=Button(question1,text="28" ,command=play_age2,font=('Times_New_Romans', 30))
                 button3.place(x=150, y=350, width=200, height=70)
                 button4=Button(question1,text="26" ,command=play_age2,font=('Times_New_Romans', 30))
