@@ -22,7 +22,7 @@ def log_in_page():
         gamespage.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
         gamespage.title("Games") # Title each page has different one
         gamespage.configure(background='black') # black pages includes the #homepage/ #gamesectionpage/ #playpage
-
+            
         def missing_lyrics():
 
             missing = Tk()
@@ -36,10 +36,15 @@ def log_in_page():
             def play_missing1():
                 missing.destroy()
                 gamespage.destroy()
+
                 question1 = Tk()
                 question1.geometry("800x500+400+170") # This is the fixed layout on how big my pages would be
                 question1.title("Missing Lyrics Question1") # Title each page has different one
                 question1.configure(background='light grey') # black pages includes the #homepage/ #gamesectionpage/ #playpage
+                global count
+                count=0 
+                def addcount():
+                    count + 1
 
                 def play_missing2():
                     question1.destroy()
@@ -84,7 +89,7 @@ def log_in_page():
                                 label.place(x=170, y=150)
                                 button1=Button(question5, text="hoes",command=overall_result, font=('Times_New_Romans', 30))
                                 button1.place(x=150, y=230, width=200, height=70)
-                                button2=Button(question5,text="truth" ,command=overall_result,font=('Times_New_Romans', 30))
+                                button2=Button(question5,text="truth" ,command=lambda: [overall_result(), addcount()],font=('Times_New_Romans', 30))
                                 button2.place(x=460, y=230, width=200, height=70) #correct answer
                                 button3=Button(question5,text="troes" ,command=overall_result,font=('Times_New_Romans', 30))
                                 button3.place(x=150, y=350, width=200, height=70)
@@ -102,7 +107,7 @@ def log_in_page():
                             button2.place(x=460, y=230, width=200, height=70)
                             button3=Button(question4,text="dizzy" ,command=play_missing5,font=('Times_New_Romans', 30))
                             button3.place(x=150, y=350, width=200, height=70)
-                            button4=Button(question4,text="damned" ,command=play_missing5,font=('Times_New_Romans', 30))
+                            button4=Button(question4,text="damned" ,command=lambda: [play_missing5(), addcount()],font=('Times_New_Romans', 30))
                             button4.place(x=460, y=350, width=200, height=70) # correct answer
                             question4.mainloop()
 
@@ -116,7 +121,7 @@ def log_in_page():
                         button2.place(x=460, y=230, width=200, height=70)
                         button3=Button(question3,text="car" ,command=play_missing4,font=('Times_New_Romans', 30))
                         button3.place(x=150, y=350, width=200, height=70)
-                        button4=Button(question3,text="benz" ,command=play_missing4,font=('Times_New_Romans', 30))
+                        button4=Button(question3,text="benz" ,command=lambda: [play_missing4(), addcount()],font=('Times_New_Romans', 30))
                         button4.place(x=460, y=350, width=200, height=70) # correct answer
                         question3.mainloop()
 
@@ -124,7 +129,7 @@ def log_in_page():
                     label.place(x=210, y=40)
                     label=Label(question2, text="His love never felt _____, switch sides and I'm beside you ", font=('Times_New_Romans', 14))
                     label.place(x=155, y=150)
-                    button1=Button(question2, text="right",command=play_missing3, font=('Times_New_Romans', 30))
+                    button1=Button(question2, text="right",command=lambda: [play_missing3(), addcount()], font=('Times_New_Romans', 30))
                     button1.place(x=150, y=230, width=200, height=70) # correct answer
                     button2=Button(question2,text="good" ,command=play_missing3,font=('Times_New_Romans', 30))
                     button2.place(x=460, y=230, width=200, height=70)
@@ -138,7 +143,7 @@ def log_in_page():
                 label.place(x=210, y=40)
                 label=Label(question1, text="I can't believe that it's ______ Friday, Yeah it's ______ Friday", font=('Times_New_Romans', 14))
                 label.place(x=145, y=150)
-                button1=Button(question1, text="freaky",command=play_missing2, font=('Times_New_Romans', 30))
+                button1=Button(question1, text="freaky",command=lambda: [play_missing2(), addcount()], font=('Times_New_Romans', 30))
                 button1.place(x=150, y=230, width=200, height=70) # correct answer
                 button2=Button(question1,text="moody" ,command=play_missing2,font=('Times_New_Romans', 30))
                 button2.place(x=460, y=230, width=200, height=70)
