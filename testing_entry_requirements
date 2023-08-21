@@ -1,0 +1,38 @@
+import tkinter as tk
+from tkinter import messagebox
+
+def validate_password(password):
+    # Add your password validation logic here
+    # For example, you can check if the password meets certain criteria like length, uppercase, lowercase, digits, etc.
+    return len(password) >= 8
+
+def submit():
+    username = username_entry.get()
+    password = password_entry.get()
+
+    if not username or not password:
+        messagebox.showerror("Error", "Both username and password are required!")
+    elif not validate_password(password):
+        messagebox.showerror("Error", "Password does not meet requirements!")
+    else:
+        messagebox.showinfo("Success", "Username and password are valid!")
+
+app = tk.Tk()
+app.title("Username and Password Entry")
+
+username_label = tk.Label(app, text="Username:")
+username_label.pack()
+
+username_entry = tk.Entry(app)
+username_entry.pack()
+
+password_label = tk.Label(app, text="Password:")
+password_label.pack()
+
+password_entry = tk.Entry(app, show="*")  # Show asterisks instead of actual characters
+password_entry.pack()
+
+submit_button = tk.Button(app, text="Submit", command=submit)
+submit_button.pack()
+
+app.mainloop()
